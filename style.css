@@ -1,0 +1,591 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.logo img {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 2rem;
+}
+    /* HAM  */
+
+.whole_ham {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    display: none;
+}
+.lines {
+  background: #000;
+  width: 2.6rem;
+  height: .4rem;
+}
+.nav_items {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    margin-right: 3rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 6;
+}
+
+.nav_items li {
+    font-size: 2.7rem;
+    transition: .4s;
+    color: black;
+}
+
+
+.nav_items li :hover {
+  color: #1363DF;
+  
+}
+.nav_items li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+/* SCROLLBAR  */
+::-webkit-scrollbar {
+    width: .7rem;
+}
+::-webkit-scrollbar-thumb {
+    background: #5485cf;
+    border-radius: 3rem;
+}
+
+
+/* MOBILE ITEMS */
+.whole_mobile_items ul {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style: none;
+    
+
+}
+
+.whole_mobile_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+    transition: .4s;
+    position: absolute;
+    background: #fff;
+    
+    z-index: 2;
+}
+
+.whole_mobile_items li {
+    font-weight: bolder;
+    color: white;
+}
+.whole_mobile_items li:hover {
+    color: #1363DF;
+}
+
+
+.whole_mobile_items ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* HEADER  */
+.whole_header {
+    background: #f2f2f2;
+     height: 60rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.left_header {
+    margin-left: 10rem;
+}
+
+.left_header h2 {
+    font-size: 3.1rem;
+    color: #1363DF;
+}
+
+.left_header h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #082e66;
+}
+
+.left_header h3 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #0a3575;
+    
+}
+
+.left_header p {
+    font-size: 2rem;
+    width: 32rem;
+    min-width: 1rem;
+    margin: 2.6rem 0rem;
+}
+
+.left_header button {
+    margin-top: 2rem;
+    padding: 2rem 3.2rem;
+    transition: .3s;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    outline: none;
+    background: #5485cf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.left_header button:hover {
+    background: #205ebc;
+}
+
+/* RIGHT HEADER PART  */
+.img {
+    width: 30rem;
+    height: 30rem;
+    background: url('assets/IMG_20220611_123358.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.right_header {
+    margin-right: 14rem;
+}
+
+
+/* ABOUT ME  */
+.whole_about_me {
+    margin-top: 5rem;
+    height: 60rem;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    gap: 19rem;
+}
+
+
+.left_abt_me {
+  height: 50rem;
+  width: 43rem;
+  background: url('assets/final.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-left: 6rem;
+}
+
+.right_abt_me {
+   max-width: 56rem;
+}
+
+.right_abt_me #span {
+    font-size: 2.3rem;
+    color: #1363DF;
+}
+
+.right_abt_me h1 {
+    font-size: 4.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.right_abt_me p {
+    font-size: 1.6rem;
+    margin: 2rem 0rem;
+    line-height: 2.4rem;
+}
+
+.right_abt_me h2 {
+    font-size: 2.6rem;
+    margin: 3rem 0rem;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.whole_intrests {
+    display: flex;
+    font-size: 4.5rem;
+    gap: 3rem;
+    margin-left: 4rem ;
+    margin: 2rem 0rem;
+}
+
+.details {
+    font-size: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.det_span {
+    font-size: 1.6rem;
+    color: #1363DF;
+}
+
+.icons_texts {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.det_icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* ICON STYLES  */
+
+#icon_m {
+    color: #5485cf;
+}
+
+#icon_g {
+    color: #5485cf;
+}
+
+#icon_t {
+    color: #5485cf;
+}
+
+
+/* SKILLS I KNOW SECTION  */
+
+#head_div {
+    text-align: center;
+    margin: 8rem 0rem;
+}
+.heading {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 4.4rem;
+
+}
+
+.whole_skills_div {
+    display: flex;
+    gap: 9rem;
+}
+.skill_bx {
+    border: 1px solid black;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill_bx h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 2rem 0rem;
+
+}
+
+.skill_bx_logo {
+    width: 12rem;
+    padding: 3.7rem 0rem;
+    border-radius: 0;
+}
+
+.skill_bx p {
+    font-size: 1.6rem;
+}
+
+.text {
+    text-align: center;
+    width: 32rem;
+    padding: 3rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* PARTICULRLY LOGO STYLES  */
+
+#react_js_logo {
+   transition: .4s;
+}
+#react_js_logo:hover {
+    border-bottom: 1.2rem solid #61DBFB;
+    border-left: 1.2rem solid #61DBFB;
+    transform: translateY(-1.2rem);
+}
+
+#bootstrap_logo {
+    transition: .4s;
+}
+
+#bootstrap_logo:hover {
+    border-bottom: 1.2rem solid #8512fb;
+    transform: translateY(-1.2rem);
+}
+
+#tailwind_css_logo {
+    transition: .4s;
+}
+
+#tailwind_css_logo:hover {
+    border-bottom: 1.2rem solid #06b6d4;
+    border-right: 1.2rem solid #06b6d4;
+    transform: translateY(-1.2rem);
+}
+
+/* FOOTER  */
+
+footer {
+    background: #f2f2f2;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    font-size: 1.6rem;
+    /* margin-right: 3rem; */
+}
+
+footer strong {
+    font-size: 1.6rem;
+}
+.social_media_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .4rem;
+}
+.all_medias {
+    font-size: 5.8rem;
+    display: flex;
+    gap: .2rem;
+    margin-right: 3rem;
+}
+
+.all_medias a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    padding: 0rem 1rem;
+
+}
+
+.all_medias a:hover {
+    color: #1363DF;
+    transform: translateY(-1rem);
+}
+.cen {
+    text-align: center;
+}
+
+/* PROJECTS  */
+
+.cent {
+    text-align: center;
+    margin-top: 14rem;
+    margin-bottom: 4rem;
+}
+
+
+.whole_project {
+    display: flex;
+    justify-content: center;
+}
+
+.center_projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    gap: 2.5rem;
+}
+
+.second_bg {
+    background: url('https://img.freepik.com/free-vector/people-analyzing-growth-charts_23-2148866843.jpg?t=st=1654836057~exp=1654836657~hmac=0ea58f33b24ad820c8f975c19425f30487163e68c62114cf357d0bd3fa47509c&w=740');
+}
+
+
+.project_div {
+    width: 40rem;
+    height: 30rem;
+    border: 1px solid #c4bbb9;
+    transition: .3s;
+}
+
+.project_div:hover {
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.space_p {
+    height: 100%;
+    padding: 2rem;
+}
+
+.project_bg {
+    padding: 13rem;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/woman-sitting-meditating-pile-books-student-study-learning-flat-vector-illustration-education-knowledge-concept-mobile-app-template_74855-12608.jpg?t=st=1654837398~exp=1654837998~hmac=e3e2df9f094c0f21a4909ae6581c1797a0b4f71ad3c9d1433fcbdcbb641339f3&w=360');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second_bg {
+    padding: 13rem;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/people-analyzing-growth-charts_23-2148866843.jpg?t=st=1654836057~exp=1654836657~hmac=0ea58f33b24ad820c8f975c19425f30487163e68c62114cf357d0bd3fa47509c&w=740');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third_bg {
+    padding: 13rem;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3866.jpg?t=st=1654836021~exp=1654836621~hmac=f61654be5b782d1d5dc894e39bf45a82aa431c4b13cbb53db4cc78521a4167fd&w=740');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourth_bg {
+    padding: 13rem;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/remote-employee-working-home-office-man-sits-sofa-with-laptop-drinks-coffee-convenient-workplace-comfortable-conditions_575670-399.jpg?t=st=1654838565~exp=1654839165~hmac=b7c2d941a00c25cb763d49997b66ff9cc0c165d19a13c9957b18045b35dc50d0&w=740');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fifth_bg {
+    padding: 13rem;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/manager-prioritizing-tasks-list_74855-5272.jpg?t=st=1654838696~exp=1654839296~hmac=2048566d7810794fbd7386cacb54203d3031333ad561b2cb341479df9f5cd7e9&w=740');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sixth_bg {
+    padding: 13rem;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-vector/company-employees-sharing-thoughts-ideas_74855-5469.jpg?t=st=1654838798~exp=1654839398~hmac=5b73a03fa0e90e1565c1aa9fb8e09ec798c5bf8679b6c360c76bd163f93a0575&w=740');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* REVIEWS SECTION  */
+
+.rev_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whole_reviews {
+    display: flex;
+    gap: 4rem;
+}
+
+.review_cont {
+    border: 1px solid #1365df6f;
+    width: 40rem;
+    border-radius: 1rem;
+}
+.left_rev {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#quort  , #quort2 , #quort3 {
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: #1363DF;
+}
+
+.review_cont p {
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.review_cont strong  , span {
+    font-size: 1.9rem;
+}
+.review_cont span {
+    color: #1363DF;
+}
+.star {
+    font-size: 1.6rem;
+    color: #FFD700;
+}
+
+.ratings {
+    margin-top:1rem
+}
+
+
+
+.rev_bottom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+.right_rev  , img {
+    width: 7rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.right_rev img {
+    border: 2px solid #1363DF;
+    padding: .3rem;
+}
+
+
+
